@@ -51,7 +51,7 @@ void loop()
   }
 
   // print value to the USB port
-  Serial.println("Digitized Value of " + String(iVal) + " is equivalent to a tempature input of " + String(temp) + " deg. which is " + tempatureString);
+  Serial.println("Digitized Value of " + String(iVal) + " is equivalent to a tempature input of " + String(temp) + " deg. C, which is " + tempatureString);
 
   // wait 0.5 seconds (500 ms)
   delay(500);
