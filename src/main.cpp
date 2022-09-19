@@ -1,5 +1,11 @@
 #include <Arduino.h>
 
+/*
+ * I, Justin Borzi, 000798465 certify that this material is my original
+ * work. No other person's work has been used without due
+ * acknowledgement. (Replace with your own name and student number)
+ */
+
 void setup()
 {
   // configure the USB serial monitor
