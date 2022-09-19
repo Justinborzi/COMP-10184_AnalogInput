@@ -17,9 +17,14 @@ void loop()
   String tempatureString;
   // read digitized value from the D1 Mini's A/D convertor
   int iVal = analogRead(A0);
+
+  // Calculate the voltage with a cap between 3.3V and 0V.
   float voltage = iVal * (3.3 / 1023.0);
+
+  // Calculate the tempature with a cap between 50.00°C and 0.00°C.
   float temp = voltage * (50.0 / 3.3);
 
+  // Set the variable to the correct output based on tempature.
   if (temp <= 10)
   {
     tempatureString = "Cold!";
